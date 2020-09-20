@@ -20,7 +20,7 @@ class Arr{
 class ListMaior{
     list1(){
         for(let i =0; i<arrAlunos.length; i++){
-            if(arrAlunos[i].idade >  18 && ){
+            if(arrAlunos[i].idade >  18){
                 listaMaior = listaMaior + `<div>${arrAlunos[i].nome} ${arrAlunos[i].idade}</div>`
             }
         }
@@ -41,5 +41,3 @@ class ListMenor{
 var cadastro = new Arr();
 var maior = new ListMaior();
 var menor = new ListMenor();
-//lista alunos mais velhos
-//lista alunos mais novos
