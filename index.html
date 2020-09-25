@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de alunos</title>
 
-    <script src="cadastro.js"></script>
+    <script src="js/alunos.js"></script>
+    <script src="js/geren.js"></script>
+
     <link rel="stylesheet" 
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
@@ -31,13 +33,19 @@
             <div><h1>Cadastro de Alunos</h1></div>
             <div><input id="c1" type="text" placeholder="Digite o nome" class="border border-info"/></div>
             <div><input id="c2" type="number" placeholder="Digite a idade" class="border border-info"/></div>
-            <div><button class="btn btn-primary btn-sm border border-dark"  onclick="cadastro.arrCadastro()">Cadastrar</button></div>
-            <div><button class="btn btn-primary btn-sm border border-dark" onclick="maior.list1()">Mais Velho</button></div>
-            <div><button class="btn btn-primary btn-sm border border-dark" onclick="menor.list2()">Mais Novo</button></div>
+            <div><button class="btn btn-primary btn-sm border border-dark" onclick="inp.telaParaArray()">Cadastrar</button></div>
+            <div><button class="btn btn-primary btn-sm border border-dark" onclick="inp.alunoMaisVelho()">Mais Velho</button></div>
+            <div><button class="btn btn-primary btn-sm border border-dark" onclick="inp.alunoMaisNovo()">Mais Novo</button></div>
+            <div><button class="btn btn-primary btn-sm border border-dark" onclick="inp.listaDeCadastrados()">Listar Cadastrados</button></div>
             <br>
             <div id="c3" ></div>
-        
     </div>
+    <br>
+    <div class="container p-3 mb-2 bg-secondary text-white">
+        <h2>Lista de Cadastrados</h2>
+        <div id="c4"></div>
+    </div>
+    
 
     
 </body>
